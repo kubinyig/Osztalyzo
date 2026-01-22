@@ -105,7 +105,7 @@ public partial class MainWindow : Window
                 gradesPanel.Children.Add(gradeLabel);
             }
             Label averageLabel = new Label();
-            averageLabel.Content = student.Average().ToString("0.00");
+            averageLabel.Content = Math.Round(student.Average(),2).ToString();
             Grid.SetColumn(gradesPanel, 1);
             Grid.SetColumn(averageLabel, 2);
             onestudentgrid.Children.Add(nameLabel);
